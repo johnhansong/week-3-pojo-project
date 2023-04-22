@@ -11,6 +11,7 @@ console.log(firstFruitObject(fruits));
 
 function firstFruitObject(fruits) {
     // Your code here
+    return fruits[0]
 }
 
 
@@ -25,6 +26,7 @@ console.log(lastFruitObject(fruits));
 
 function lastFruitObject(fruits) {
     // Your code here
+    return fruits[fruits.length-1]
 }
 
 
@@ -40,6 +42,7 @@ console.log(indexFruitObject(17, fruits));
 
 function indexFruitObject(index, fruits) {
     // Your code here
+    return fruits[index]
 }
 
 
@@ -55,6 +58,10 @@ console.log(fruitNames(fruits));
 
 function fruitNames(fruits) {
     // Your code here
+    fruits.forEach(obj => {
+        console.log(obj.name)
+        return obj.name
+    })
 }
 
 /* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
